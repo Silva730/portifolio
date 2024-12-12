@@ -1,0 +1,200 @@
+body {
+    background-color: black;
+    color: rgb(156, 73, 233);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: rgb(162, 79, 240);
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 15pt;
+    margin: 15px;
+    transition: 0.5s ease-in-out;
+}
+a:hover {
+    color: purple;
+    transform: scale(1.2);
+}
+span {
+    color: white;
+    font-size: 25pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(67, 10, 100, 0.384);
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.container-home {
+    margin: 40px;
+    text-align: center;
+}
+
+#home {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+}
+
+.imagem-home, .imagem-sobre {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    margin: 20px;
+}
+.text-sobre {
+    margin-left: 80px;
+}
+#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.text-sobre {
+    max-width: 500px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h1-skills {
+    color: blueviolet;
+    background-color: rgba(128, 0, 128, 0.267);
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25pt;
+    margin: 30px;
+}
+
+.box-js, .box-html, .box-linux, .box-css, .box-node {
+    background-color: rgba(52, 51, 53, 0.452);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.3s ease-out;
+    margin: 30px;
+}
+
+.box-js:hover, .box-html:hover, .box-linux:hover, .box-css:hover, .box-node:hover {
+    transform: translateY(-20px);
+}
+
+.p-js, .p-html, .p-linux, .p-node, .p-css {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.container-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    text-align: center;
+    color: blueviolet;
+    background-color: transparent;
+    font-size: 20pt;
+    margin: 20px;
+    margin-bottom: 100px;
+    border: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    text-align: center;
+}
+
+button:hover {
+    transform: scale(1.2);
+    color: purple;
+}
+
+
+@media screen and (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-home {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .text-sobre {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .imagem-home, .imagem-sobre {
+        width: 250px;
+    }
+
+    #skills {
+        flex-direction: column;
+    }
+
+    .container-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-js, .box-html, .box-linux, .box-css, .box-node {
+        margin: 10px;
+        padding: 15px;
+        margin-top: 40px;
+    }
+
+    .h1-skills {
+        font-size: 20pt;
+        width: auto;
+    }
+
+    button {
+        font-size: 18pt;
+    }
+}
